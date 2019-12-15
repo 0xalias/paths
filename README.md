@@ -9,7 +9,7 @@
 
 First, verify domains respond on specific ports and schemes using `httprobe` (results will be saved to `httprobe-results`):
 
-```cat domains | httprobe -p http:8081 | tee httprobe-results```
+    cat domains | httprobe -p http:8081 | tee httprobe-results
 
 where `domains` file looks like:
 
@@ -20,5 +20,5 @@ yahoo.com
 
 Second, use the results of `httprobe` as the `hostsFile` argument for `meg` (results will be saved to `meg-results` dir):
 
-    ```meg -c 20 -d 1000 ./jenkins.txt ./httprobe-results ./meg-results```
+    meg -c 20 -d 1000 ./jenkins.txt ./httprobe-results ./meg-results
 
