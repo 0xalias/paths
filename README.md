@@ -9,7 +9,7 @@
 
 First, verify domains respond on specific ports and schemes using `httprobe` (results will be saved to `httprobe-results`):
 
-    ```cat domains | httprobe -p http:8081 | tee httprobe-results```
+```cat domains | httprobe -p http:8081 | tee httprobe-results```
 
 where `domains` file looks like:
 
