@@ -25,6 +25,7 @@
 /administration
 /auditevents
 /cloudfoundryapplication
+/env
 /health
 /health/broker
 /health/db
